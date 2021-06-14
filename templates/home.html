@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Home</title>
+	<link rel="stylesheet" type="text/css"  href="static/styles.css">
+</head>
+<body>
+<script>
+	
+function check(form){
+    if (form.message.value.trim() == ""){
+    	alert("Please enter text....")
+        return false
+    }
+}
+
+	</script>
+
+
+	<header>
+		<div class="container">
+		<div id="brandname">
+			Spam Detector App using NLP
+		</div>
+		<h2>Spam Detector For Email Messages</h2>
+		
+	</div>
+	</header>
+
+	<div class="ml-container">
+
+		<form name="form1" action="/predict" method="POST" onsubmit="return check(this)">
+		<p>Enter Your Message/Mail Here which you want to predict Spam or Ham</p>
+		<textarea name="message" rows="6" cols="50" placeholder="Enter Your Message..." ></textarea>
+		<br/>
+
+		<input type="Submit" class="btn-info" value="Predict" >
+		
+	</form>
+		
+	</div>
+</body>
+	 <footer class="footer">
+    <div class="footerContainer">
+        
+    </div>
+</html>
