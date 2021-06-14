@@ -1,5 +1,5 @@
 flask
-gunicorn
+gunicorn==19.9.0
 nltk
 Werkzeug==0.15.5
 sklearn
