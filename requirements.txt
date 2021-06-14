@@ -1,4 +1,5 @@
 flask
 gunicorn
-pickle
 nltk
+Werkzeug==0.15.5
+sklearn
